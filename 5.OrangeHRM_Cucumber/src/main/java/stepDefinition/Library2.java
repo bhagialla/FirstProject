@@ -17,6 +17,7 @@ public void open_Browser() throws Throwable {
 	System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\Lib\\chromedriver.exe");
 	driver = new ChromeDriver();
 	driver.manage().window().maximize();
+	System.out.println("chrome driver launched successfully");
 }
 
 @When("^access application$")
